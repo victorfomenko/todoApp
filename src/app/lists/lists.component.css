@@ -1,0 +1,19 @@
+li {
+  cursor: pointer;
+  width: 100%;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+li.active {
+  cursor: default;
+  font-weight: bold;
+}
+.counter {
+  position: absolute;
+}
+.todo-name {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

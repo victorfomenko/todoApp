@@ -1,0 +1,18 @@
+<div *ngFor="let list of store.lists">
+  <div *ngIf="list.active">
+    <h1>
+      <input type="text" [(ngModel)]="list.name">
+    </h1>
+    <a href="#" (click)="onAddTodoClick($event, list)">New item</a>
+    <ul>
+      <li *ngFor="let todo of list.todos; let i = index;" class="{{todo.completed ? 'completed' : '' }}">
+        <input type="checkbox" id=todo-{{i}} [(ngModel)]="todo.completed">
+        <label for="todo-{{i}}">{{todo.name}}</label>
+      </li>
+    </ul>
+  </div>
+</div>
+<div *ngIf="store.lists.length === 0">
+  List is empty ;( <br>
+  Please create the first list of todos.
+</div>

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+html,
+head,
+body {
+  margin: 0;
+  height: 100%
+}
+body,
+input {
+  font-family: Helvetica, Arial, sans-serif
+}
+
+h1 {
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+app-root {
+  overflow: hidden;
+  height: 100%;
+  display: block;
+}

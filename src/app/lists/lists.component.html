@@ -1,0 +1,11 @@
+<h1>Lists</h1>
+
+<div>
+  + <a href="#" (click)="onNewListClick($event)">New List</a>
+</div>
+<ul>
+  <li *ngFor="let list of store.lists" class="{{list.active ? 'active' : ''}}" (click)="onListClick(list)">
+    <span class="todo-name">{{list.name}}</span>
+    <span class="counter">({{store.getWithCompleted(list, false).length}})</span>
+  </li>
+</ul>

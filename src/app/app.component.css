@@ -1,0 +1,12 @@
+app-lists,
+app-todo-list {
+  padding: 10px;
+  display: inline-block;
+}
+
+app-lists {
+  float: left;
+  width: 150px;
+  max-width: 150px;
+  border-right: 1px solid gray;
+}
